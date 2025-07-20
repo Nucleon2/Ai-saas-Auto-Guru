@@ -4,4 +4,7 @@
     .font-mono-uppercase{
         @apply font-mono uppercase text-white
     }
+    .default-font{
+        @apply font-mono text-white
+    }
 }

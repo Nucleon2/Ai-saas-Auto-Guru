@@ -5,6 +5,12 @@ import { MdPrivacyTip } from "react-icons/md";
 import { MdDevices } from "react-icons/md";
 import { GiBrain } from "react-icons/gi";
 
+import facebook from "../assets/socials/facebook.svg"
+import discord from "../assets/socials/discord.svg"
+import twitter from "../assets/socials/twitter.svg"
+import instagram from "../assets/socials/instagram.svg"
+import telegram from "../assets/socials/telegram.svg"
+
 export const features = [
   {
     icon: <BsRobot size={24} />,
@@ -86,7 +92,7 @@ export const useCases = [
   },
   {
     title: "Pro",
-    price: "$9/month",
+    price: "$9",
     description: "Unlock advanced features for power users and enthusiasts.",
     features: [
       "All Free features",
@@ -99,7 +105,7 @@ export const useCases = [
   },
   {
     title: "Garage+",
-    price: "$29/month",
+    price: "$29",
     description: "For families, garages, and car enthusiasts managing multiple vehicles.",
     features: [
       "All Pro features",
@@ -110,4 +116,37 @@ export const useCases = [
     ],
     cta: "Try Garage+"
   }
+];
+
+export const socials = [
+  {
+    id: "0",
+    title: "Discord",
+    iconUrl: discord,
+    url: "#",
+  },
+  {
+    id: "1",
+    title: "Twitter",
+    iconUrl: twitter,
+    url: "#",
+  },
+  {
+    id: "2",
+    title: "Instagram",
+    iconUrl: instagram,
+    url: "#",
+  },
+  {
+    id: "3",
+    title: "Telegram",
+    iconUrl: telegram,
+    url: "#",
+  },
+  {
+    id: "4",
+    title: "Facebook",
+    iconUrl: facebook,
+    url: "#",
+  },
 ];
