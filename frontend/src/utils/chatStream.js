@@ -1,7 +1,7 @@
-export async function streamChat(message, onToken) {
+export async function streamChat(userMessage, onToken) {
   const resp = await fetch('http://localhost:5000/api/chat/Deepseek', {
     method: 'POST',
-    body: JSON.stringify({ message }),
+    body: JSON.stringify({ message: userMessage }),
     headers: { 'Content-Type': 'application/json' }
   });
 

@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const UseCases = () => {
   return (
-    <div id="use-cases" className=" mx-[10%]" >
+    <div id="use-cases" className=" h-dvh flex flex-col items-center justify-center mx-[10%]" >
         <h1 className="text-center text-7xl my-10" >Use cases</h1>
       <ul className="grid grid-rows-6 grid-cols-1 md:grid-rows-3 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-6 ">
         {useCases.map((item, index) => {
