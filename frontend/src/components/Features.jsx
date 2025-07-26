@@ -3,9 +3,10 @@ import Button from "./Button";
 
 const Features = () => {
   return (
-    <div id="features" className="w-full px-[10%] -mt-150 md:-mt-80 lg:py-16 lg:mt-0 bg-transparent md:h-dvh flex flex-col items-center justify-center">
-      <h1 className="text-center text-7xl my-10 bg-transparent">Features</h1>
-      <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+    <div id="features" className=" md:pt-130 w-full px-[10%] md:-mt-120 lg:py-16
+     lg:mt-0 bg-transparent lg:h-dvh flex flex-col items-center justify-center">
+      <h1 className="text-center text-7xl my-10 bg-transparent ">Features</h1>
+      <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 bg-transparent ">
         {features.map((feature, index) => (
           <li
             key={index}

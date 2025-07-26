@@ -15,12 +15,12 @@ const HomePage = () => {
       <Features />
       <UseCases />
       <div style={{ backgroundImage: `url(${FuturisticCar})` }}
-            className=" hidden md:flex flex-col relative h-300 w-f bg-cover  bg-center pt-50 m-0" >
+            className=" hidden md:flex flex-col relative h-300 bg-cover  bg-center pt-50 m-0" >
         <Pricing />
         <Footer />
       </div>
       <div style={{ backgroundImage: `url(${FuturisticCarPhone})` }}
-            className="md:hidden relative h-300 w-f bg-cover  bg-center pt-50 m-0" >
+            className="md:hidden relative h-full w-f bg-cover  bg-center pt-50 m-0" >
         <Pricing />
         <Footer />
       </div>

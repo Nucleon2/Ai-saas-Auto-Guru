@@ -2,41 +2,26 @@ import car from "../assets/car.png";
 import carPhone from "../assets/carPhone.png";
 
 const Hero = () => {
-  return (<>
-    <div className="relative w-full h-screen overflow-hidden">
-      <div className=" absolute -z-10">
-        <img
-          src={carPhone}
-          width={2568}
-          height={2568}
-          alt="car"
-          className="w-full object-cover lg:hidden "
-        />
-        <img
-          src={car}
-          width={4000}
-          height={2568}
-          alt="car"
-          className="hidden lg:block md:mt-70 "
-        />
-      </div>
-      <div className="z-10 relative flex items-center justify-center h-full bottom-[35%] lg:bottom-[25%] flex-col">
-        <h1 className="text-4xl lg:text-7xl text-white text-center">
-          Meet Auto Guru
-        </h1>
-        <h2 className="text-xl lg:text-3xl text-gray-300 text-center">
+  return (
+    <section className="relative w-full min-h-screen overflow-hidden mt-30">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-4 text-center">
+        <h1 className="text-4xl lg:text-7xl text-white">Meet Auto Guru</h1>
+        <h2 className="mt-2 text-xl lg:text-3xl text-gray-300">
           Your AI-Powered Car Assistant
         </h2>
-        
+
+        {/* Image always directly under the text */}
+        <picture className=" -mt-30 md:-mt-70 lg:mt-10 block w-full -z-10 ">
+          <source media="(min-width:1024px)" srcSet={car} />
+          <img
+            src={carPhone}
+            alt="car"
+            className="mx-auto w-[90%] max-w-5xl object-contain"
+            draggable="false"
+          />
+        </picture>
       </div>
-      {/* <div className="z-10 relative h-full bottom-[35%] lg:bottom-[25%] flex justify-center " >
-        <h3 className="text-xl lg:text-3xl w-5/6 md:2/3 lg:w-1/2 text-gray-300 mb-10">
-          Ask anything about your car — from repairs to recommendations.
-          AutoGuru is always ready to help, 24/7.
-        </h3>
-      </div>  */}
-    </div>
-    </>
+    </section>
   );
 };
 

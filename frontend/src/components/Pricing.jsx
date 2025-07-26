@@ -3,7 +3,7 @@ import Button from "./Button.jsx"
 
 const Pricing = () => {
   return (
-    <div id="pricing" className=" md:h-dvh flex flex-col items-center justify-center"
+    <div id="pricing" className=" lg:h-dvh flex flex-col items-center justify-center"
     >
       <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-black via-black/40 to-transparent" />
       <h1 className="text-center text-7xl my-10">Pricing</h1>
