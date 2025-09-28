@@ -9,7 +9,7 @@ AutoGuru is a full-stack web application that provides instant, expert car advic
 ## Technologies
 
 - **Frontend:** React, Vite, Tailwind CSS
-- **Backend:** Express, OpenAI SDK, DeepSeek API
+- **Backend:** Express, DeepSeek API
 
 ## Usage
 - if you want to use the project use your own deepseek api key to chat with the AI
